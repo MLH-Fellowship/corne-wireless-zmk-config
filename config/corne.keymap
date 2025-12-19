@@ -125,10 +125,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB           &kp Q                 &kp W  &kp E            &kp R             &kp T    &kp Y                 &kp U      &kp I              &kp O    &kp P                     &kp BACKSPACE
-&kp LEFT_CONTROL  &kp_tap LEFT_SHIFT A  &kp S  &kp D            &kp F             &kp G    &kp H                 &kp J      &kp K              &kp L    &kp_tap RIGHT_SHIFT SEMI  &kp ESC
-&kp LEFT_SHIFT    &new_behavior 3 Z     &kp X  &kp_tap COLON C  &kp V             &kp B    &kp N                 &kp M      &kp COMMA          &kp DOT  &kp FSLH                  &kp LG(LC(Q))
-                                               &mo 2            &kp LEFT_COMMAND  &mo 1    &kp_tap LEFT_ALT RET  &kp SPACE  &kp RIGHT_COMMAND
+&trans  &kp Q                 &kp W  &kp E            &kp R             &kp T    &kp Y                 &kp U      &kp I              &kp O    &kp P                     &trans
+&trans  &kp_tap LEFT_SHIFT A  &kp S  &kp D            &kp F             &kp G    &kp H                 &kp J      &kp K              &kp L    &kp_tap RIGHT_SHIFT SEMI  &trans
+&trans  &new_behavior 3 Z     &kp X  &kp_tap COLON C  &kp V             &kp B    &kp N                 &kp M      &kp COMMA          &kp DOT  &kp FSLH                  &trans
+                                     &mo 2            &kp LEFT_COMMAND  &mo 1    &kp_tap LEFT_ALT RET  &kp SPACE  &kp RIGHT_COMMAND
             >;
         };
 
@@ -152,10 +152,19 @@
 
         controls {
             bindings = <
-&trans  &trans  &trans            &trans        &trans            &trans    &kp C_PLAY_PAUSE  &kp C_VOL_DN          &kp C_VOLUME_UP       &kp BACKSPACE  &trans  &trans
-&trans  &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &trans    &kp LEFT          &kp DOWN              &kp UP                &kp RIGHT      &trans  &trans
-&trans  &trans  &trans            &trans        &trans            &trans    &kp TAB           &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans         &trans  &trans
-                                  &trans        &kp LEFT_SHIFT    &trans    &trans            &trans                &trans
+&trans  &trans  &trans            &trans        &trans            &trans    &trans    &kp C_VOL_DN          &kp C_VOLUME_UP       &kp BACKSPACE  &trans  &trans
+&trans  &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &trans    &kp LEFT  &kp DOWN              &kp UP                &kp RIGHT      &trans  &trans
+&trans  &trans  &trans            &trans        &trans            &trans    &kp TAB   &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans         &trans  &trans
+                                  &trans        &kp LEFT_SHIFT    &trans    &trans    &trans                &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
